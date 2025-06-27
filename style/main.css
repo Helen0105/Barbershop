@@ -1,3 +1,4 @@
+@charset "UTF-8";
 ul {
   list-style: none;
   margin: 0;
@@ -21,4 +22,139 @@ h1, h2, h3, p {
 
 button {
   cursor: pointer;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid rebeccapurple;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 448px) {
+  .container {
+    width: 448px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .container {
+    width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.header {
+  background-color: gray;
+}
+.header__nav {
+  display: none;
+}
+@media (min-width: 720px) {
+  .header__nav {
+    display: block;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .header__nav {
+    margin-left: 100px;
+  }
+}
+.header__list {
+  list-style: none;
+}
+@media (min-width: 720px) {
+  .header__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 52px;
+  }
+}
+.header__item {
+  margin-right: 16px;
+}
+@media screen and (min-width: 1200px) {
+  .header__item {
+    margin-right: 30px;
+  }
+}
+.header__item:last-child {
+  margin-right: 0;
+}
+.header__link {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+.header__link:hover, .header__link:focus {
+  color: #ff6c00;
+}
+.header .header__items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+@media (min-width: 720px) {
+  .header .header__items {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+.header__contact {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  display: flex; /* включает flexbox для контейнера */
+  align-items: center; /* центрирует элементы по вертикали */
+  justify-content: space-between;
+}
+.header__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 720px) {
+  .header__box {
+    display: none;
+  }
+}
+.header__logo {
+  width: 68.93px;
+  height: 55.46px;
+}
+.header__burger {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+}
+.header .button {
+  width: 160px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  border: 1px solid #ff6c00;
 }/*# sourceMappingURL=main.css.map */
