@@ -162,4 +162,20 @@ body {
   justify-content: center;
   border-radius: 25px;
   border: 1px solid #FF6C00;
+}
+
+.hero {
+  padding-top: 40px;
+  position: absolute;
+  width: 100%;
+  background-color: gray;
+}
+.hero__text {
+  color: rgba(157, 164, 189, 0.6);
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */
